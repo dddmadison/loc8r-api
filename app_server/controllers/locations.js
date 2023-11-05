@@ -4,7 +4,7 @@ const Loc=mongoose.model('Location');
 const { post } = require("request");
 const request = require("request");
 const apiOption = { server: 'http://localhost:3000' };
-if (process.env.NODE_ENV === 'production') { apiOption.server = 'https://rnd_26y9kBWrqkhleCydnBKM4TEGRua7.onrender.com'; }
+if (process.env.NODE_ENV === 'production') { apiOption.server = 'https://loc8r-api-5jsl.onrender.com'; }
 
 module.exports.homelist = (req, res) => {
     const path = '/api/locations';
